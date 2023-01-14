@@ -1,0 +1,60 @@
+
+@mixin FadeIn($opacity,$transform){
+    opacity: $opacity;
+    transform: $transform;
+}
+@keyframes FadeInDown {
+    0% {
+        @include FadeIn(0,translateY(-100px) )
+    }
+
+    100% {
+        @include FadeIn(1,translateY(0) )
+    }
+
+}
+@keyframes FadeInLeft  {
+    0% {
+        @include FadeIn(O,translateX(100px) )
+    }
+
+    100% {
+        @include FadeIn(1, translateX(0) )
+    }
+
+}
+@keyframes FadeInRight   {
+    0% {
+        @include FadeIn(0,translateX(-100px) )
+    }
+
+    100% {
+        @include FadeIn(1,translateX(0) )
+    }
+
+}
+
+
+.FadeInDown{
+    animation-name: FadeInDown;
+    animation-duration: 1s;
+    animation-delay: 600ms;
+    animation-fill-mode: both;
+}
+.FadeInLeft{
+    animation-name: FadeInLeft;
+    animation-duration: 1s;
+    animation-delay: 600ms;
+    animation-fill-mode: both;
+}
+.FadeInRight{
+    animation-name: FadeInRight;
+    animation-duration: 1s;
+    animation-delay: 600ms;
+    animation-fill-mode: both;
+}
+
+
+.paused *{
+    animation-play-state: paused;
+}

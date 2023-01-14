@@ -1,247 +1,183 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+@keyframes FadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes FadeInLeft {
+  0% {
+    opacity: O;
+    transform: translateX(100px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes FadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.FadeInDown {
+  animation-name: FadeInDown;
+  animation-duration: 1s;
+  animation-delay: 600ms;
+  animation-fill-mode: both; }
+
+.FadeInLeft {
+  animation-name: FadeInLeft;
+  animation-duration: 1s;
+  animation-delay: 600ms;
+  animation-fill-mode: both; }
+
+.FadeInRight {
+  animation-name: FadeInRight;
+  animation-duration: 1s;
+  animation-delay: 600ms;
+  animation-fill-mode: both; }
+
+.paused * {
+  animation-play-state: paused; }
 
 * {
-    font-family: 'Open Sans', sans-serif;
-    /*familia tipográfica*/
-    margin: 0;
-    padding: 0;
-}
-#menu img{
-    width: 180px;
-}
+  font-family: 'Open Sans', sans-serif;
+  /*familia tipográfica*/
+  margin: 0;
+  padding: 0; }
+
+#menu img {
+  width: 180px; }
 
 body {
-    font-family: Montserrat;
-    font-weight: 400;
-    line-height: 1.7;
-    background-size: cover;
-    background-attachment: fixed;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 1.7;
+  background-size: cover;
+  background-attachment: fixed; }
 
-}
-
-nav{
-    position: sticky;
-    background-color: white;
-    max-width: 1160px;
-    margin: auto;
-    padding: 23px 0 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
+nav {
+  position: sticky;
+  background-color: white;
+  max-width: 1160px;
+  margin: auto;
+  padding: 23px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
 #menu ul li a:hover {
-    transform: scale(1.10);
-    transition: all 1s;
-    color: #0cb8b6;
-}
-
+  transform: scale(1.1);
+  transition: all 1s;
+  color: #0cb8b6; }
 
 article {
-    text-align: center;
-    border: #444;
-    border-radius: 0ex;
-    padding: 0 15px;
-    overflow: hidden;
-}
-
-article img {
+  text-align: center;
+  border: #444;
+  border-radius: 0ex;
+  padding: 0 15px;
+  overflow: hidden; }
+  article img {
     width: 100%;
-    height: 308px;
-}
-
-article iframe {
+    height: 308px; }
+  article iframe {
     width: 100%;
-    height: 308px;
-}
+    height: 308px; }
 
 section {
-    padding: 50px;
-}
+  padding: 50px; }
 
 footer {
-    position: sticky;
-    background-color: #0cb8b6;
-    margin: auto;
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer a img {
+  position: sticky;
+  background-color: #0cb8b6;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  footer a img {
     height: 24px;
     width: 24px;
-    display: block;
-}
-
-/* .container {
-    max-width: 1160px;
-    margin: auto;
-    padding: 0%;
-} */
-
-
+    display: block; }
 
 .titulo {
-    text-align: center;
-    margin: 35px;
-    font-size: x-large;
-}
-
-.titulo p {
+  text-align: center;
+  margin: 35px;
+  font-size: x-large; }
+  .titulo p {
     font-size: medium;
-    color: #444;
-}
+    color: #444; }
 
 .backgroun-gris {
-    background-color: #f1f1f1;
-    padding: 50px;
-}
+  background-color: #f1f1f1;
+  padding: 50px; }
 
 footer .social {
-    font-size: small;
-}
+  font-size: small; }
 
 footer .icon {
-    font-size: small;
-}
+  font-size: small; }
 
 footer .card {
-    margin-bottom: 30px;
-    text-align: -webkit-center;
-}
-
-
+  margin-bottom: 30px;
+  text-align: -webkit-center; }
 
 form input {
-    height: 40px;
-}
+  height: 40px; }
 
 input,
 textarea {
-    width: 100%;
-    background-color: rgba(0, 0, 0, .07);
-    padding: 0 20px;
-    border: none;
-}
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.07);
+  padding: 0 20px;
+  border: none; }
 
 input,
 textarea:focus {
-    box-shadow: 0 0 2px #0cb8b6 inset
-}
+  box-shadow: 0 0 2px #0cb8b6 inset; }
 
 .btn-sucsess {
-    color: #fff;
-    background-color: #0cb8b6;
-    font-weight: 700;
-    cursor: pointer;
-}
+  color: #fff;
+  background-color: #0cb8b6;
+  font-weight: 700;
+  cursor: pointer; }
 
 .btn-sucsess:hover {
-    background-color: #07706f;
-}
+  background-color: #07706f; }
 
 .btn-sm {
-    width: 120px;
-}
+  width: 120px; }
 
 #servicios h3,
 #valores h3 {
-    color: #0cb8b6;
-}
+  color: #0cb8b6; }
 
 #valores article p {
-    text-align: left;
-}
+  text-align: left; }
 
 .text-left {
-    text-align: left;
-
-}
+  text-align: left; }
 
 #servicios .group {
-    align-items: center;
-}
+  align-items: center; }
 
 .image {
-    width: 100%;
-    height: 308px;
-    overflow: hidden;
-}
+  width: 100%;
+  height: 308px;
+  overflow: hidden; }
 
 .scale:hover {
-    transform: scale(1.3);
-    transition: all 1s;
-    cursor: pointer;
-}
+  transform: scale(1.3);
+  transition: all 1s;
+  cursor: pointer; }
 
-.logo img{
-    width: 100%;
-}
-.banner img{
-    width: 100%;
-}
+.logo img {
+  width: 100%; }
 
-@keyframes FadeInDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-100px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-}
-@keyframes FadeInLeft  {
-    0% {
-        opacity: 0;
-        transform: translateX(100px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-}
-@keyframes FadeInRight   {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-}
-
-
-.FadeInDown{
-    animation-name: FadeInDown;
-    animation-duration: 1s;
-    animation-delay: 600ms;
-    animation-fill-mode: both;
-}
-.FadeInLeft{
-    animation-name: FadeInLeft;
-    animation-duration: 1s;
-    animation-delay: 600ms;
-    animation-fill-mode: both;
-}
-.FadeInRight{
-    animation-name: FadeInRight;
-    animation-duration: 1s;
-    animation-delay: 600ms;
-    animation-fill-mode: both;
-}
-
-
-.paused *{
-    animation-play-state: paused;
-}
+.banner img {
+  width: 100%; }
