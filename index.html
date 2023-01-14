@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Medico Digital - Diagnostico por imagenes</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-violet" id="menu">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Logo centro medico">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contactos.html">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/banner/atencion.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner/instalaciones.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner/RAYOS X.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner/tomografias.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <section id="especialidad" class="paused">
+            <div class="container">
+                <div class="titulo FadeInDown">
+                    <h1>NUESTAS ESPECIALIDADES</h1>
+                </div>
+                <div class="row FadeInDown">
+                    <article class="col-sm-12 col-md-6 col-lg-3 mb-2 ">
+                        <div class="card">
+                            <div class="image">
+                                <img class="card-img-top w-100 scale" src="img/especialidades/odontologia.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title">Odontologia</h2>
+                                <p class="card-text">Contamos con todas la tecnología para tu salud dental, brackets
+                                    metálicos, estéticos,
+                                    ortodoncia
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-sm-12 col-md-6 col-lg-3 mb-2">
+                        <div class="card">
+                            <div class="image">
+                                <img class="card-img-top w-100 scale" src="img/especialidades/otorrinolaringologia.jpg"
+                                    alt="">
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title">Otorrinolaringología</h2>
+                                <p class="card-text">Nuestros especialistas tienen como principal función brindar una
+                                    atención integral en la
+                                    evolución física, mental,
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-sm-12 col-md-6 col-lg-3 mb-2">
+                        <div class="card">
+                            <div class="image">
+                                <img class="card-img-top w-100 scale" src="img/especialidades/ginecologia.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title">GINECOLOGÍA Y OBSTETRICIA</h2>
+                                <p class="card-text">Estamos especializados en el cuidado de la salud femenina, para
+                                    ello contamos con
+                                    especialistas
+                                    en la prevención, diagnostico y tratamiento de los problemas de salud propios del
+                                    aparato
+                                    genital femenino.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-sm-12 col-md-6 col-lg-3 mb-2">
+                        <div class="card">
+                            <div class="image">
+                                <img class="card-img-top w-100 scale" src="img/especialidades/neumologia.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title">Neumologia</h2>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+                                    aut consequuntur? Maxime
+                                    sed
+                                    nisi dignissimos corporis temporibus animi, cum molestiae deleniti dolore non
+                                    aliquam
+                                    numquam
+                                    magnam, sequi repudiandae ex! Eligendi?
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="staff" class="backgroun-gris paused">
+            <div class="container">
+                <div class="titulo FadeInDown">
+                    <h1>NUESTRO STAFF MEDICO</h1>
+                    <p>Nuestro compromiso y responsabilidad con el paciente empieza desde el primer contacto en el que
+                        somos
+                        conocedores de tus problemas de salud y desde ya tendremos un vinculo basado en la confianza y
+                        empatía
+                        para que tu experiencia en CÉNTRO MÉDICO DIGITAL sea la mejor.</p>
+                </div>
+                <div class="row FadeInDown">
+                    <article class="col-sm-12 col-md-6 col-lg-3 mb-2">
+                        <div class="card">
+                            <div class="image">
+                                <img class="scale" src="img/medicos/dr-hugo-rojas-web.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <spam class="card-title">Oftalmología
+                                </spam>
+                                <h2>Hugo Rojas Valdivia</h2>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-sm-12 col-md-6 col-lg-3 mb-2">
+                        <div class="card">
+                            <div class="image">
+                                <img class="scale" src="img/medicos/Dra.-Magaly-Alamos-web.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <spam>Neurología
+                                </spam>
+                                <h2>Magaly Janet Albornoz Sirlupu
+                                </h2>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-sm-12 col-md-6 col-lg-3 mb-2">
+                        <div class="card">
+                            <div class="image">
+                                <img class="scale" src="img/medicos/dr-annely-saavedra-web.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <spam class="card-title"> Reumatología
+                                </spam>
+                                <h2>Annely Gonzales Rosas</h2>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-sm-12 col-md-6 col-lg-3 mb-2">
+                        <div class="card">
+                            <div class="image">
+                                <img class="scale" src="img/medicos/Dravctoria-ramirez-web.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <spam class="card-title">Ginecología y Obstetricia
+                                </spam>
+                                <h2>Victoria Ramirez Coronado</h2>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="noticias" class="paused">
+            <div class="container">
+                <div class="titulo FadeInDown" data-wow-duration="1000ms">
+                    <h1>ULTIMAS NOTICIAS</h1>
+                    <p>Lea nuestras últimas noticias de Centro Médico digital o noticias médicas generales. Siéntase
+                        libre
+                        de
+                        hacer preguntas en los comentarios sobre cualquier noticia que encuentre interesante.
+                    </p>
+                </div>
+                <div class="row FadeInDown">
+                    <article class="col-sm-12 col-md-6 col-lg-4 mb-2">
+                        <div class="card">
+                            <iframe width="500" height="350" src="https://www.youtube.com/embed/bvYQnW2y9bE"
+                                title="RESONANCIA MAGNETICA - CENTRO MÉDICO DIGITAL" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <h2 class="card-body">RESONANCIA MAGNETICA</h2>
+                        </div>
+                    </article>
+
+                    <article class="col-sm-12 col-md-6 col-lg-4 mb-2">
+                        <div class="card">
+                            <iframe width="1160" height="653" src="https://www.youtube.com/embed/MzsTBhm3up4"
+                                title="RESONANCIA MAGNETICA CARDIACA - CENTRO MEDICO DIGITAL" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <h2 class="card-body">RESONANCIA MAGNETICA CARDIACA</h2>
+                        </div>
+                    </article>
+                    <article class="col-sm-12 col-md-6 col-lg-4 mb-2">
+                        <div class="card">
+                            <img src="img/especialidades/RSENADOR-1200x607.jpg" alt="RESONANCIA MAGNETICA">
+                            <h2 class="card-body">Innovamos con resonancia magnética de última generación: Altea de
+                                Siemens 2022 (Alemania)
+                            </h2>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="logo">
+                            <img src="img/logo.png" alt="Logo centrom medico">
+                        </div>
+                        <div class="card-body row">
+                            <a class="social col-md-4" href="https://www.facebook.com" target="_blank"><img
+                                    src="img/icons/facebook.png" alt="facebook"></a>
+                            <a class="social col-md-4" href="https://www.instagram.com " target="_blank"><img
+                                    src="img/icons/instagram.png" alt="instagram"></a>
+                            <a class="social col-md-4" href="https://www.youtube.com" target="_blank"><img
+                                    src="img/icons/youtube.png" alt="youtube"></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="">
+                                <img class="icon" src="img/icons/telegono.png" alt=""></a>
+                            <div>
+                                <h5>Atenciuon al cliente</h5>
+                                <p>073-245599</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="">
+                                <img src="img/icons/correo.png" alt=""></a>
+
+                            <h5>Email</h5>
+                            <p>informes@centrodigital.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="">
+                                <img src="img/icons/direccion.png" alt=""></a>
+
+                            <h5>Direccion</h5>
+                            <p>Av. Grau 831 Arequipa - Peru</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script>
+
+        function isVisible(elm) {
+            var rect = elm.getBoundingClientRect();
+            var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+            return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+        }
+
+
+        window.addEventListener('DOMContentLoaded', (ev0) => {
+
+            window.addEventListener('scroll', (ev1) => {
+
+                document.querySelectorAll(".paused").forEach(elm => {
+                    if (isVisible(elm))
+                        elm.classList.remove("paused");
+                })
+            });
+        });
+    </script>
+</body>
+
+</html>
